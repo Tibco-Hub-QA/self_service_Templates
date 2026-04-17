@@ -214,7 +214,7 @@ spec:
           ingressControllerName: traefik
           ingressHostName: ${{ parameters.deploymentTarget.dataplaneHost }}
           portServicePathMappings:
-            - port: 9090
+            - port: 8991
               servicePath: '/tibco/apps/${{ steps["deploy-bw5ce-app"].output.data.appId }}'
               isPublic: true
               isServiceDiscoveryEnabled: true
